@@ -1,0 +1,512 @@
+package com.zjt.entity;
+
+import java.util.Date;
+import javax.persistence.*;
+
+@Table(name = "t_ad")
+public class Trserrole {
+    /**
+     * 广告ID
+     */
+    @Id
+    @Column(name = "AD_ID")
+    private Long adId;
+
+    /**
+     * 企业ID
+     */
+    @Column(name = "ENT_ID")
+    private Long entId;
+
+    /**
+     * 区域店铺ID
+     */
+    @Column(name = "STORE_ID")
+    private Long storeId;
+
+    /**
+     * 位置CODE
+     */
+    @Column(name = "POSITION_CODE")
+    private String positionCode;
+
+    /**
+     * 广告名称
+     */
+    @Column(name = "AD_NAME")
+    private String adName;
+
+    /**
+     * 广告描述
+     */
+    @Column(name = "AD_DESC")
+    private String adDesc;
+
+    /**
+     * 广告类型：10-图片 20-文字
+     */
+    @Column(name = "AD_TYPE")
+    private Integer adType;
+
+    /**
+     * 广告图片
+     */
+    @Column(name = "AD_IMG")
+    private String adImg;
+
+    /**
+     * 轮播图通栏背景色
+     */
+    @Column(name = "AD_RBG")
+    private String adRbg;
+
+    /**
+     * 广告链接
+     */
+    @Column(name = "AD_URL")
+    private String adUrl;
+
+    /**
+     * 广告文章
+     */
+    @Column(name = "AD_ARTICLE")
+    private String adArticle;
+
+    /**
+     * 广告序号
+     */
+    @Column(name = "AD_INDEX")
+    private Integer adIndex;
+
+    /**
+     * 开始时间
+     */
+    @Column(name = "START_TIME")
+    private Date startTime;
+
+    /**
+     * 结束时间
+     */
+    @Column(name = "END_TIME")
+    private Date endTime;
+
+    /**
+     * 是否生效：0-失效 1-生效
+     */
+    @Column(name = "IS_VALID")
+    private String isValid;
+
+    /**
+     * 生效时间
+     */
+    @Column(name = "VALID_TIME")
+    private Date validTime;
+
+    /**
+     * 是否逻辑删除：0-不删除 1：删除
+     */
+    @Column(name = "IS_DELETE")
+    private String isDelete;
+
+    /**
+     * 创建时间
+     */
+    @Column(name = "CREATE_TIME")
+    private Date createTime;
+
+    /**
+     * 修改时间
+     */
+    @Column(name = "MODIFY_TIME")
+    private Date modifyTime;
+
+    /**
+     * 创建人
+     */
+    @Column(name = "CREATOR")
+    private String creator;
+
+    /**
+     * 修改人
+     */
+    @Column(name = "MODIFIER")
+    private String modifier;
+
+    /**
+     * 获取广告ID
+     *
+     * @return AD_ID - 广告ID
+     */
+    public Long getAdId() {
+        return adId;
+    }
+
+    /**
+     * 设置广告ID
+     *
+     * @param adId 广告ID
+     */
+    public void setAdId(Long adId) {
+        this.adId = adId;
+    }
+
+    /**
+     * 获取企业ID
+     *
+     * @return ENT_ID - 企业ID
+     */
+    public Long getEntId() {
+        return entId;
+    }
+
+    /**
+     * 设置企业ID
+     *
+     * @param entId 企业ID
+     */
+    public void setEntId(Long entId) {
+        this.entId = entId;
+    }
+
+    /**
+     * 获取区域店铺ID
+     *
+     * @return STORE_ID - 区域店铺ID
+     */
+    public Long getStoreId() {
+        return storeId;
+    }
+
+    /**
+     * 设置区域店铺ID
+     *
+     * @param storeId 区域店铺ID
+     */
+    public void setStoreId(Long storeId) {
+        this.storeId = storeId;
+    }
+
+    /**
+     * 获取位置CODE
+     *
+     * @return POSITION_CODE - 位置CODE
+     */
+    public String getPositionCode() {
+        return positionCode;
+    }
+
+    /**
+     * 设置位置CODE
+     *
+     * @param positionCode 位置CODE
+     */
+    public void setPositionCode(String positionCode) {
+        this.positionCode = positionCode == null ? null : positionCode.trim();
+    }
+
+    /**
+     * 获取广告名称
+     *
+     * @return AD_NAME - 广告名称
+     */
+    public String getAdName() {
+        return adName;
+    }
+
+    /**
+     * 设置广告名称
+     *
+     * @param adName 广告名称
+     */
+    public void setAdName(String adName) {
+        this.adName = adName == null ? null : adName.trim();
+    }
+
+    /**
+     * 获取广告描述
+     *
+     * @return AD_DESC - 广告描述
+     */
+    public String getAdDesc() {
+        return adDesc;
+    }
+
+    /**
+     * 设置广告描述
+     *
+     * @param adDesc 广告描述
+     */
+    public void setAdDesc(String adDesc) {
+        this.adDesc = adDesc == null ? null : adDesc.trim();
+    }
+
+    /**
+     * 获取广告类型：10-图片 20-文字
+     *
+     * @return AD_TYPE - 广告类型：10-图片 20-文字
+     */
+    public Integer getAdType() {
+        return adType;
+    }
+
+    /**
+     * 设置广告类型：10-图片 20-文字
+     *
+     * @param adType 广告类型：10-图片 20-文字
+     */
+    public void setAdType(Integer adType) {
+        this.adType = adType;
+    }
+
+    /**
+     * 获取广告图片
+     *
+     * @return AD_IMG - 广告图片
+     */
+    public String getAdImg() {
+        return adImg;
+    }
+
+    /**
+     * 设置广告图片
+     *
+     * @param adImg 广告图片
+     */
+    public void setAdImg(String adImg) {
+        this.adImg = adImg == null ? null : adImg.trim();
+    }
+
+    /**
+     * 获取轮播图通栏背景色
+     *
+     * @return AD_RBG - 轮播图通栏背景色
+     */
+    public String getAdRbg() {
+        return adRbg;
+    }
+
+    /**
+     * 设置轮播图通栏背景色
+     *
+     * @param adRbg 轮播图通栏背景色
+     */
+    public void setAdRbg(String adRbg) {
+        this.adRbg = adRbg == null ? null : adRbg.trim();
+    }
+
+    /**
+     * 获取广告链接
+     *
+     * @return AD_URL - 广告链接
+     */
+    public String getAdUrl() {
+        return adUrl;
+    }
+
+    /**
+     * 设置广告链接
+     *
+     * @param adUrl 广告链接
+     */
+    public void setAdUrl(String adUrl) {
+        this.adUrl = adUrl == null ? null : adUrl.trim();
+    }
+
+    /**
+     * 获取广告文章
+     *
+     * @return AD_ARTICLE - 广告文章
+     */
+    public String getAdArticle() {
+        return adArticle;
+    }
+
+    /**
+     * 设置广告文章
+     *
+     * @param adArticle 广告文章
+     */
+    public void setAdArticle(String adArticle) {
+        this.adArticle = adArticle == null ? null : adArticle.trim();
+    }
+
+    /**
+     * 获取广告序号
+     *
+     * @return AD_INDEX - 广告序号
+     */
+    public Integer getAdIndex() {
+        return adIndex;
+    }
+
+    /**
+     * 设置广告序号
+     *
+     * @param adIndex 广告序号
+     */
+    public void setAdIndex(Integer adIndex) {
+        this.adIndex = adIndex;
+    }
+
+    /**
+     * 获取开始时间
+     *
+     * @return START_TIME - 开始时间
+     */
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    /**
+     * 设置开始时间
+     *
+     * @param startTime 开始时间
+     */
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     * 获取结束时间
+     *
+     * @return END_TIME - 结束时间
+     */
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    /**
+     * 设置结束时间
+     *
+     * @param endTime 结束时间
+     */
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    /**
+     * 获取是否生效：0-失效 1-生效
+     *
+     * @return IS_VALID - 是否生效：0-失效 1-生效
+     */
+    public String getIsValid() {
+        return isValid;
+    }
+
+    /**
+     * 设置是否生效：0-失效 1-生效
+     *
+     * @param isValid 是否生效：0-失效 1-生效
+     */
+    public void setIsValid(String isValid) {
+        this.isValid = isValid == null ? null : isValid.trim();
+    }
+
+    /**
+     * 获取生效时间
+     *
+     * @return VALID_TIME - 生效时间
+     */
+    public Date getValidTime() {
+        return validTime;
+    }
+
+    /**
+     * 设置生效时间
+     *
+     * @param validTime 生效时间
+     */
+    public void setValidTime(Date validTime) {
+        this.validTime = validTime;
+    }
+
+    /**
+     * 获取是否逻辑删除：0-不删除 1：删除
+     *
+     * @return IS_DELETE - 是否逻辑删除：0-不删除 1：删除
+     */
+    public String getIsDelete() {
+        return isDelete;
+    }
+
+    /**
+     * 设置是否逻辑删除：0-不删除 1：删除
+     *
+     * @param isDelete 是否逻辑删除：0-不删除 1：删除
+     */
+    public void setIsDelete(String isDelete) {
+        this.isDelete = isDelete == null ? null : isDelete.trim();
+    }
+
+    /**
+     * 获取创建时间
+     *
+     * @return CREATE_TIME - 创建时间
+     */
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    /**
+     * 设置创建时间
+     *
+     * @param createTime 创建时间
+     */
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    /**
+     * 获取修改时间
+     *
+     * @return MODIFY_TIME - 修改时间
+     */
+    public Date getModifyTime() {
+        return modifyTime;
+    }
+
+    /**
+     * 设置修改时间
+     *
+     * @param modifyTime 修改时间
+     */
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
+    }
+
+    /**
+     * 获取创建人
+     *
+     * @return CREATOR - 创建人
+     */
+    public String getCreator() {
+        return creator;
+    }
+
+    /**
+     * 设置创建人
+     *
+     * @param creator 创建人
+     */
+    public void setCreator(String creator) {
+        this.creator = creator == null ? null : creator.trim();
+    }
+
+    /**
+     * 获取修改人
+     *
+     * @return MODIFIER - 修改人
+     */
+    public String getModifier() {
+        return modifier;
+    }
+
+    /**
+     * 设置修改人
+     *
+     * @param modifier 修改人
+     */
+    public void setModifier(String modifier) {
+        this.modifier = modifier == null ? null : modifier.trim();
+    }
+}

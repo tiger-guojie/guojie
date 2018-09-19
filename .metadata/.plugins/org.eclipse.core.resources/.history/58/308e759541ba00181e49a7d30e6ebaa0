@@ -1,0 +1,37 @@
+#server
+server.port=8081
+server.context-path=/
+
+spring.profiles.active=dev
+
+#encoding
+spring.http.encoding.force=true
+spring.http.encoding.charset=UTF-8
+spring.http.encoding.enabled=true
+
+#mybatis
+mybatis.type-aliases-package= com.micro.model
+mybatis.mapper-locations= classpath*:mybatis/mapper/*.xml
+
+#druid
+druid.initialSize= 5
+druid.minIdle= 0
+druid.maxActive= 20
+druid.maxWait= 6000
+druid.timeBetweenEvictionRunsMillis= 60000
+druid.minEvictableIdleTimeMillis= 300000
+druid.validationQuery= SELECT 1 FROM DUAL
+druid.testWhileIdle= false
+druid.testOnBorrow= false
+druid.testOnReturn= false
+druid.poolPreparedStatements= true
+druid.maxPoolPreparedStatementPerConnectionSize= 20
+druid.filters= stat,log4j
+
+
+########################################################
+###THYMELEAF (ThymeleafAutoConfiguration)
+########################################################
+spring.thymeleaf.cache=false
+spring.thymeleaf.mode=LEGACYHTML5
+

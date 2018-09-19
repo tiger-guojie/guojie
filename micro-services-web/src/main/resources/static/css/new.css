@@ -1,0 +1,153 @@
+.form-inline{
+	border-bottom:1px solid #d8d8d8;
+	background:#fff;
+	padding:5px 10px;
+	overflow:hidden;
+}
+.form-inline .btn{
+	margin:0 ;
+	border:none;
+	font-size:12px;
+}
+
+.form-inline .btn i{
+	padding-right:5px;
+	font-size:13px;
+}
+
+/* table.table-borderLeftNone{
+	width:99%;
+} */
+
+table.table-borderLeftNone{
+	border-right:0;
+	border-left:0;
+}
+
+table.table-borderLeftNone tr{
+	border-right:0;
+}
+
+table.table-borderLeftNone tr th{
+	border-left:0;
+	font-size:13px;
+	border-bottom:#ddd;
+}
+
+table.table-borderLeftNone tr td{
+	border-left:0;
+	border-bottom:0;
+	border-right:0;
+	text-align:center;
+}
+
+table.table-borderLeftNone > thead:first-child > tr:first-child > th{
+	border-top:1px solid #ddd;
+}
+
+table.table-borderLeftNone.no-footer{
+	border-bottom:1px solid #ddd;
+}
+
+.input-form-inline{
+	padding:10px;
+	padding-left:0;
+}
+
+.input-form-inline .form-group{
+	margin-left:10px;
+}
+
+
+
+.dataTables_wrapper .dataTables_paginate{
+	padding-bottom: 0.45em;
+}
+
+select{
+	border: 1px solid #ddd;
+}
+
+.form-control{
+	height:29px;
+	line-height:29px;
+	font-size:12px;
+	border-radius: 4px;
+}
+
+.btn-primary{
+	border-radius: 4px;
+}
+
+.form-groupFloat{
+	float:right;
+	
+}
+
+
+/* ---------------修改翻页的鼠标经过的颜色及字体 --------------------*/
+
+.dataTables_paginate span .ui-state-disabled, .pagination.alternate li.active a{
+	background:#337ab7 !important;
+}
+
+.dataTables_paginate span .ui-state-disabled, .pagination.alternate li.active a:hover{
+	background:#286090 !important;
+}
+
+.dataTables_length label,.dataTables_length select{
+	font-weight:normal;
+}
+
+
+/* --------------------修改modal模态框的样式 ------------------*/
+
+.modal-header{
+	background:none;
+	padding:12px 15px;
+}
+
+.modal-header h4{
+	font-size:15px;
+	font-weight:bold;
+	letter-space:1px;
+}
+
+.modal-content{
+	border-radius: 0;
+}
+
+.modal-content .btn-primary{
+	border-radius: 0;
+}
+.modal-content .row{
+	padding:5px 0 10px 0;
+}
+
+.modal-content .row label{
+	line-height:26px;
+	font-size:14px;
+	font-weight:normal;
+}
+
+.modal-content .row .col-md-4{
+	padding:0;
+}
+
+.widget-boxDetail{
+	border-bottom:1px solid #ddd;
+	padding-bottom:5px;
+}
+
+.widget-boxDetail .row{
+	padding:4px 10px 0 10px;
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.widget-boxDetail .row label{
+	height:20px;
+	line-height:20px;
+	margin-bottom:0;
+}
+

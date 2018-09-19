@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.micro.model.UsersPo"/>
+<fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
+<fullyQualifiedTypeName name="com.github.pagehelper.PageHelper"/>
+<fullyQualifiedTypeName name="com.micro.service.ResourcesService"/>
+<fullyQualifiedTypeName name="com.micro.service.RoleService"/>
+<fullyQualifiedTypeName name="org.springframework.data.redis.serializer.RedisSerializer"/>
+<fullyQualifiedTypeName name="com.micro.mapper.UserRolePoMapper"/>
+<fullyQualifiedTypeName name="com.micro.model.UserRolePoExample"/>
+<fullyQualifiedTypeName name="com.micro.model.UserRolePo"/>
+<fullyQualifiedTypeName name="com.micro.model.UserRolePoExample.Criteria"/>
+<fullyQualifiedTypeName name="com.micro.model.RoleResourcesPoExample"/>
+<fullyQualifiedTypeName name="com.micro.model.RoleResourcesPoExample.Criteria"/>
+<fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.log4j.spi.LoggerFactory"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="com.micro.util.JsonResult"/>
+<fullyQualifiedTypeName name="com.micro.handler.GlobalExceptionHandler"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSONArray"/>
+<fullyQualifiedTypeName name="net.sf.json.JSONArray"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSON"/>
+<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.support.SpringBootServletInitializer"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="manager"/>
+<aop-project name="micro-services-web"/>
+<aop-project name="micro-manager-web"/>
+</aop-reference-model>

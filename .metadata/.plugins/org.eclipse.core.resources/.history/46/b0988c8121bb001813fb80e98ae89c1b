@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjt.mapper.TrserroleMapper">
+  <resultMap id="BaseResultMap" type="com.zjt.entity.Trserrole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="AD_ID" jdbcType="BIGINT" property="adId" />
+    <result column="ENT_ID" jdbcType="BIGINT" property="entId" />
+    <result column="STORE_ID" jdbcType="BIGINT" property="storeId" />
+    <result column="POSITION_CODE" jdbcType="VARCHAR" property="positionCode" />
+    <result column="AD_NAME" jdbcType="VARCHAR" property="adName" />
+    <result column="AD_DESC" jdbcType="VARCHAR" property="adDesc" />
+    <result column="AD_TYPE" jdbcType="INTEGER" property="adType" />
+    <result column="AD_IMG" jdbcType="VARCHAR" property="adImg" />
+    <result column="AD_RBG" jdbcType="VARCHAR" property="adRbg" />
+    <result column="AD_URL" jdbcType="VARCHAR" property="adUrl" />
+    <result column="AD_ARTICLE" jdbcType="VARCHAR" property="adArticle" />
+    <result column="AD_INDEX" jdbcType="INTEGER" property="adIndex" />
+    <result column="START_TIME" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="END_TIME" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="IS_VALID" jdbcType="CHAR" property="isValid" />
+    <result column="VALID_TIME" jdbcType="TIMESTAMP" property="validTime" />
+    <result column="IS_DELETE" jdbcType="CHAR" property="isDelete" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+  </resultMap>
+</mapper>
