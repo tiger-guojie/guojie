@@ -11,5 +11,5 @@ public interface TmenuService extends IService<Tmenu>{
 
     List<Tmenu> selectByParentIdAndRoleId(HashMap<String, Object> paraMap);
 
-
+    List<Tmenu> queryAll();
 }

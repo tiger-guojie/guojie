@@ -1,10 +1,21 @@
 package com.micro.entity;
 
-import javax.persistence.*;
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Table(name = "t_user_role")
-public class Tuserrole {
-    @Id
+public class Tuserrole  implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2632876536974284224L;
+
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 

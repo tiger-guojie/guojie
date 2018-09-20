@@ -1,10 +1,22 @@
 package com.micro.entity;
 
-import javax.persistence.*;
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Table(name = "t_user")
-public class Tuser {
-    @Id
+public class Tuser  implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6443472816896561801L;
+
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 

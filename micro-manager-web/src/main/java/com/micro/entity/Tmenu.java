@@ -1,10 +1,19 @@
 package com.micro.entity;
 
-import javax.persistence.*;
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Table(name = "t_menu")
-public class Tmenu {
-    @Id
+public class Tmenu  implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5031951941840354091L;
+
+	@Id
     private Integer id;
 
     private String icon;

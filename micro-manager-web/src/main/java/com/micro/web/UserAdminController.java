@@ -25,6 +25,7 @@ import com.micro.model.PageRusult;
 import com.micro.service.TroleService;
 import com.micro.service.TuserService;
 import com.micro.service.TuserroleService;
+import com.micro.util.PasswordHelper;
 
 import tk.mybatis.mapper.entity.Example;
 
@@ -127,6 +128,8 @@ public class UserAdminController {
                     resultmap.put("mesg", "当前用户名已存在");
                     return resultmap;
                 }
+                PasswordHelper passwordHelper = new PasswordHelper();
+                passwordHelper.encryptPassword(tuser);
                 userService.saveNotNull(tuser);
             } else {//编辑
                 Tuser oldObject=userService.selectByKey(tuser.getId());

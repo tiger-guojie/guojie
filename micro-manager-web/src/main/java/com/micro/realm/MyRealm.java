@@ -14,7 +14,9 @@ import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.util.ByteSource;
 
 import com.micro.entity.Tmenu;
 import com.micro.entity.Trole;
@@ -50,12 +52,12 @@ public class MyRealm extends AuthorizingRealm{
 	 */
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-		String userName=(String) SecurityUtils.getSubject().getPrincipal();
+		Tuser userToken=(Tuser) SecurityUtils.getSubject().getPrincipal();
 
 		//User user=userRepository.findByUserName(userName);
 		//根据用户名查询出用户记录
 		Example tuserExample=new Example(Tuser.class);
-		tuserExample.or().andEqualTo("userName",userName);
+		tuserExample.or().andEqualTo("userName",userToken.getUserName());
 		Tuser user=tuserMapper.selectByExample(tuserExample).get(0);
 
 
@@ -91,8 +93,17 @@ public class MyRealm extends AuthorizingRealm{
 			tuserExample.or().andEqualTo("userName",userName);
 			Tuser user=tuserMapper.selectByExample(tuserExample).get(0);
 			if(user!=null){
-				AuthenticationInfo authcInfo=new SimpleAuthenticationInfo(user.getUserName(),user.getPassword(),"xxx");
-				return authcInfo;
+				SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
+		                user, //用户
+		                user.getPassword(), //密码
+		                ByteSource.Util.bytes(userName),
+		                getName()  //realm name
+		        );
+		        // 当验证都通过后，把用户信息放在session里
+		        Session session = SecurityUtils.getSubject().getSession();
+		        session.setAttribute("userSession", user);
+		        session.setAttribute("userSessionId", user.getId());
+		        return authenticationInfo;
 			}else{
 				return null;
 			}

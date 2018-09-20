@@ -29,4 +29,9 @@ public class TmenuServieImpl extends BaseService<Tmenu> implements TmenuService 
     public List<Tmenu> selectByParentIdAndRoleId(HashMap<String, Object> paraMap) {
         return tmenuMapper.selectByParentIdAndRoleId(paraMap);
     }
+
+	@Override
+	public List<Tmenu> queryAll() {
+		return tmenuMapper.queryAll();
+	}
 }

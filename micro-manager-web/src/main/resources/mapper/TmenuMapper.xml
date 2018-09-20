@@ -39,6 +39,13 @@
     order by tm.id ASC
   </select>
 
+<select id="queryAll" resultMap="BaseResultMap">
+    <![CDATA[
+    select tm.*
+    from t_menu tm
+      ]]>
+    order by tm.id ASC
+  </select>
 
 
 </mapper>

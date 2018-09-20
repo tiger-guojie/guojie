@@ -80,10 +80,10 @@ public class UserController {
 		UsernamePasswordToken token=new UsernamePasswordToken(user.getUserName(), user.getPassword());
 		try{
 			subject.login(token); // 登录认证
-			String userName=(String) SecurityUtils.getSubject().getPrincipal();
+			Tuser users=(Tuser) SecurityUtils.getSubject().getPrincipal();
 			//Tuser currentUser=tuserService.findByUserName(userName);
 			Example tuserExample=new Example(Tuser.class);
-			tuserExample.or().andEqualTo("userName",userName);
+			tuserExample.or().andEqualTo("userName",users.getUserName());
 			Tuser currentUser=tuserService.selectByExample(tuserExample).get(0);
 			session.setAttribute("currentUser", currentUser);
 			//List<Trole> roleList=troleService.findByUserId(currentUser.getId());

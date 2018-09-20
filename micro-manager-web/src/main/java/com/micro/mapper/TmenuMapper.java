@@ -11,5 +11,7 @@ public interface TmenuMapper extends MyMapper<Tmenu> {
     List<Tmenu> selectMenusByRoleId(Integer roleid);
 
     List<Tmenu> selectByParentIdAndRoleId(HashMap<String,Object> paraMap);
+    
+    List<Tmenu> queryAll();
 
 }
